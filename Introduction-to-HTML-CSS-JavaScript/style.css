@@ -1,0 +1,186 @@
+/* GENERAL */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background-color: #6A1B9A; /* púrpura */
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.profile_name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a.topmenu {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a.topmenu:hover {
+    text-decoration: underline;
+}
+
+/* SECTION GENERAL */
+section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    color: #6A1B9A;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* ABOUT ME */
+#aboutme {
+    text-align: center;
+}
+
+#aboutme img {
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* SKILLS */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.skill:hover {
+    transform: scale(1.05);
+}
+
+.skill img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 10px;
+}
+
+.skill p {
+    margin: 0;
+    font-weight: bold;
+}
+
+/* PROJECTS */
+.project-card {
+    margin-bottom: 20px;
+    border-left: 4px solid #6A1B9A;
+    padding-left: 10px;
+}
+
+/* RECOMMENDATIONS */
+#recommendations_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.recommendation {
+    background-color: #f9f6fd;
+    border-left: 5px solid #6A1B9A;
+    border-radius: 10px;
+    padding: 20px;
+    width: 280px;
+    font-style: italic;
+    position: relative;
+}
+
+.recommendation::before,
+.recommendation::after {
+    content: "❝";
+    font-size: 28px;
+    color: #6A1B9A;
+    position: absolute;
+}
+
+.recommendation::before {
+    top: -10px;
+    left: 10px;
+}
+
+.recommendation::after {
+    content: "❞";
+    bottom: -10px;
+    right: 10px;
+}
+
+/* FORMULARIO NUEVA RECOMENDACIÓN */
+#recommendation_input,
+#recommendation_name {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+#recommend_btn {
+    background-color: #6A1B9A;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#recommend_btn:hover {
+    background-color: #4A148C;
+}
+
+/* POPUP */
+#popup {
+    display: none;
+    background-color: #DFF0D8;
+    color: #3C763D;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+/* HOME ICON BUTTON FLOTANTE */
+.home-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.home-icon svg {
+    background-color: #6A1B9A;
+    padding: 10px;
+    border-radius: 50%;
+    fill: white;
+    width: 40px;
+    height: 40px;
+}

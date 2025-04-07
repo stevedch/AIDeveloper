@@ -1,0 +1,39 @@
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VSCode settings
+.vscode/
+
+# PyCharm settings
+.idea/
+
+# Logs
+*.log
+
+# Personal notebooks outputs
+*.out
+*.log
+*.tmp
+
+# Ignore exported data or datasets
+data/
+*.csv
+*.xlsx
+*.tsv
+*.json
+
+# Backup files
+*~
+*.bak
+*.swp

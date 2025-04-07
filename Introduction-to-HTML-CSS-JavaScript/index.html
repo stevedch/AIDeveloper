@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Steven Delgado's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="profile_name">Steven Delgado</div>
+    <nav>
+        <a class="topmenu" href="#aboutme">About Me</a>
+        <a class="topmenu" href="#skills">Skills</a>
+        <a class="topmenu" href="#projects">Projects</a>
+        <a class="topmenu" href="#recommendations">Recommendations</a>
+    </nav>
+</header>
+
+<!-- ABOUT ME -->
+<section id="aboutme">
+    <h2>About Me</h2>
+    <img src="https://cdn-icons-png.flaticon.com/512/2922/2922510.png" alt="Profile Image" />
+    <p>
+        Hi, I'm Steven Delgado! 👋 I am a full stack engineer with over 10 years of experience in backend and fullstack development. I lead digital transformation and modernization projects using Spring Boot, microservices, GraphQL, and AWS.
+    </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+        <div class="skill">
+            <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML">
+            <p>HTML5</p>
+        </div>
+        <div class="skill">
+            <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript">
+            <p>JavaScript</p>
+        </div>
+        <div class="skill">
+            <img src="https://img.icons8.com/color/48/000000/kotlin.png" alt="Kotlin">
+            <p>Kotlin</p>
+        </div>
+        <div class="skill">
+            <img src="https://img.icons8.com/color/48/000000/spring-logo.png" alt="Spring Boot">
+            <p>Spring Boot</p>
+        </div>
+        <div class="skill">
+            <img src="https://img.icons8.com/color/48/000000/amazon-web-services.png" alt="AWS">
+            <p>AWS Lambda</p>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+        <h3>Fraud Detection System</h3>
+        <p>Developed a machine learning-based system to detect online purchase frauds, integrated into Steven Delgado’s validation pipeline.</p>
+    </div>
+    <div class="project-card">
+        <h3>Product Catalog Exporter</h3>
+        <p>Built a Node.js Lambda to extract and transform product offerings from MongoDB into JSON exports for further analysis.</p>
+    </div>
+    <div class="project-card">
+        <h3>OAuth2 WebAuthn Authentication</h3>
+        <p>Implemented a secure authentication gateway using Spring Security, Keycloak, and WebAuthn for microservices-based systems.</p>
+    </div>
+</section>
+
+<!-- RECOMMENDATIONS -->
+<section id="recommendations">
+    <h2>Recommendations</h2>
+    <div id="recommendations_list">
+        <div class="recommendation">
+            Steven Delgado is an exceptional engineer with strong technical leadership. His contributions have transformed our backend architecture.
+        </div>
+        <div class="recommendation">
+            His ability to simplify complex systems and implement clean solutions is outstanding. A true team player.
+        </div>
+        <div class="recommendation">
+            Working with Steven Delgado is always a pleasure—he’s efficient, reliable, and has a deep understanding of distributed systems.
+        </div>
+    </div>
+
+    <!-- ADD NEW RECOMMENDATION -->
+    <h3>Leave a Recommendation</h3>
+    <input type="text" id="recommendation_name" placeholder="Name (Optional)" />
+    <textarea id="recommendation_input" placeholder="Message"></textarea>
+    <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+
+    <!-- POPUP -->
+    <div id="popup">
+        <p>Your recommendation has been submitted!</p>
+    </div>
+</section>
+
+<!-- HOME ICON -->
+<div class="home-icon">
+    <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path fill="white" d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+        </svg>
+    </a>
+</div>
+
+<!-- SCRIPTS -->
+<script src="script.js"></script>
+</body>
+</html>
